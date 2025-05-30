@@ -14,7 +14,7 @@ const TodoList = () => {
       description,
       category,
       completed: false,
-      date: new Date().toLocaleString(), // ✅ Add date here
+      date: new Date().toLocaleString(),
     };
     setTodos([...todos, newTodo]);
     setTitle("");
@@ -112,7 +112,7 @@ const TodoList = () => {
             </div>
             <h2 className="font-bold text-lg mb-1 break-words">{todo.title}</h2>
             <p className="text-gray-700 mb-1 break-words">{todo.description}</p>
-            <p className="text-gray-500 text-sm mb-3">📅 {todo.date}</p> {/* ✅ Date display */}
+            <p className="text-gray-500 text-sm mb-3">📅 {todo.date}</p>
             <div className="flex justify-end items-center gap-2">
               <button
                 onClick={() => deleteTodo(todo.id)}
